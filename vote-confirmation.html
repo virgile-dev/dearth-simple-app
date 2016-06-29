@@ -16,9 +16,13 @@
         <ul class="nav navbar-nav">
           <li><a href="index.html"><img src="http://localhost:3000/images/olive-spaced.png" width="25" height="25">Democracy Earth Foundation</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <!-- <ul class="nav navbar-nav navbar-right">
           <li><a href="login.html">LOGIN</a></li>
           <li><a href="signup.html">SIGN UP</a></li>
+        </ul> -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href=""><img src="assets/satoshi.png" class="img-circle satoshi" width="30" height="30"></a></li>
+          <li><a href="">SATOSHI</a></li>
         </ul>
       </div>
     </nav>
@@ -30,9 +34,29 @@
           <p></p>
           <h2>Your vote has been counted and is being processed by a 21 computer and will be later written on Bitcoin Blockchain.</h2>
           <br>
-          <img src="assets/progress-bar.png" class="img-responsive">
+          <!-- <img src="assets/progress-bar.png" class="img-responsive"> -->
+          <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+          <br>
+          <a class="btn btn-inactive" href="blockchain-confirmation.html">See blockhain transaction</a>
         </center>
       <div>
     </section>
+      <script>
+        window.onload = function move() {
+          var elem = document.getElementById("myBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+            } else {
+              width++;
+              elem.style.width = width + '%';
+            }
+          }
+        }
+      </script>
   </body>
 </html>
