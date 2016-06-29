@@ -55,9 +55,16 @@ h1{
 }
 }
 .center{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 600px){
+.center{
     margin: auto;
     width: 20%;
 }
+}
+
 #myProgress {
     position: relative;
     width: 100%;
