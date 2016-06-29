@@ -1,0 +1,41 @@
+.navbar{
+  background-color: #3A2F43;
+}
+.navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+ }
+.proposal{
+  /*padding-top: 20px;*/
+}
+.btn-yey{
+  background-color: #00C091;
+  color: #FFFFFF;
+}
+.btn-ney{
+  background-color: #FE6580;
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 16px;
+  color: #868887;
+  margin-bottom: -15px;
+}
+h1{
+  font-size: 30px;
+}
+.fa-globe{
+  color: #00C091;
+}
+@media screen and (min-width: 600px){
+  .form-group{
+    width: 300px;
+}
+}
+.center{
+    margin: auto;
+    width: 20%;
+}
